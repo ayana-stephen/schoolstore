@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+    <title>Registration Form</title>
+
+<link rel="stylesheet" href="static/style/style.css" type="text/css" />
+</head>
+<body>
+
+
+
+
+
+        <div class="container">
+	<div class="screen">
+		<div class="screen__content">
+<form action="register" method="post">
+    {% csrf_token %}
+
+         <div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+
+    <input type="text" name="username" class="login__input"  placeholder="enter your user name" ><br>
+         </div>
+         <div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+
+    <input type="text" name="firstname" class="login__input"  placeholder="enter your first name"><br>
+    </div>
+ <div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+
+    <input type="text" name="lastname"  class="login__input"  placeholder="enter your last name"><br>
+    </div>
+         <div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+
+    <input type="email" name="email"  class="login__input"  placeholder="enter your email id"><br>
+    </div>
+         <div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+
+    <input type="password" name="password" class="login__input"  placeholder="enter your password"><br>
+         </div>
+
+       <div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+
+    <input type="password" name="cpassword" class="login__input"  placeholder="enter your confirm password"><br>
+       </div>
+
+    	<button class="button login__submit">
+					<span class="button__text">submit</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>
+
+</form>
+    </div>
+        </div>
+        </div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Application</title>
+
+<link rel="stylesheet" href="static/style/style.css"/>
+
+</head>
+
+<body>
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+<form  method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+	<table>{{form.as_table}}</table>
+
+	  	<div class="col-md-12 ">
+			<div class="form-group">
+				<button class="btn btn-primary" type="submit" >Place Your Order</button>
+				<a class="btn btn-primary" href="logout">Logout</a>
+
+			</div>
+		</div>
+
+
+</form>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

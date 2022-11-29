@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="static/style/style.css">
+
+</head>
+<body>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	    <link rel="stylesheet" href="static/layout/styles/layout.css" type="text/css" />
+<script type="text/javascript" src="static/layout/scripts/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="main">
+
+
+			   <div class="container">
+	<div class="screen">
+		<div class="screen__content">
+				<form action="newform" method="post" >
+					 {% csrf_token %}
+					<div class="login__field">
+						<i class="login__icon fas fa-lock"></i>
+						<input type="text"  class="login__input"  name="username" placeholder="username" required="">
+					</div>
+
+	<div class="login__field">
+		<i class="login__icon fas fa-lock"></i>
+					<input type="password" class="login__input"   name="password" placeholder="password" required="">
+	</div>
+					<button class="button login__submit">
+					<span class="button__text">login</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>
+					 <li class="nav-item">
+        <a class="nav-link" href="register">Register</a>
+
+
+      </li>
+				</form>
+			</div>
+
+
+
+
+	</div>
+</body>
+
+
+</html>
